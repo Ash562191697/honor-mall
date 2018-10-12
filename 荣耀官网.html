@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>荣耀官网</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		/*头部导航栏*/
+		nav{
+			background-color:#fff;
+		}
+		nav img{
+			width:80px;
+			height:20px;
+		}
+		/*轮播图*/
+		article{
+			margin-top:50px;
+		}
+		.carousel .item img{
+			width:100%;
+		}
+		
+		/*四列列表*/
+		.nav-title{
+			padding:5px 0px;			
+		}
+		.row{
+			text-align:center;
+		}
+		.col-md-3{
+			border:1px solid #f2f2f2;
+		}
+		/*可切换标签*/
+		.tabs{
+			width:85%;
+			margin:auto;
+		}
+		.tab-more{
+			padding-bottom:5px;
+		}
+		/*.tab-content{
+			width:80%;
+			margin:auto;
+		}*/
+		.tab-content .tab-img{			
+			width:55%;
+			height:350px;
+		}
+		.tab-img img{
+			width:100%;
+			height:100%;	
+		}
+	    .tab-content .tab-text{
+			width:45%;
+			height:350px;
+		}
+		.tab-pane >div{
+			float:left;
+		}
+		.tab-pane:after{
+			content:'';
+			display:block;
+			clear:both;
+		}
+		.tab-text h3{
+			text-align:center;
+			padding:25px;
+		}
+		.tab-text p{
+			padding:0px 20px;
+			line-height:20px;
+			letter-spacing:1px;
+		}
+		/*底部标签*/
+		.bottom-nav{
+			width:100%;
+			height:250px;
+			background:#0099d7;
+		}
+		.foot-links{
+			width:150px;
+			height:200px;
+			margin:20px 3px;
+			float:left;
+			text-align:center;
+			padding:10px;
+		}
+		.foot-links-other{
+			width:220px;
+			height:200px;
+			margin:30px 5px;
+			float:left;
+			color:#fff;
+			padding:3px 3px;
+			font-size:14px;
+			text-align:center;
+		}
+		.foot-links-five{
+			margin-left:30px;
+			border-left:1px solid #fff;
+		}
+		.foot-links-other span{
+			line-height:30px;
+		}
+		.foot-links a{
+			color:#fff;
+			font-size:14px;
+			line-height:30px;
+			letter-spacing:1px;
+		}
+		/*footer*/
+		.footer-text{
+			text-align:center;
+			padding:15px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 头部导航栏 -->
+	<nav class="navbar  navbar-fixed-top">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><img src="images/honor-title.png" title="荣耀官网"></a></li>
+				<li class="active"><a href="#">产品</a></li>
+				<li><a href="#">伙伴通</a></li>
+				<li><a href="#">荣耀科技</a></li>
+				<li><a href="">新闻评测</a></li>
+				<li><a href="">视频</a></li>
+				<li><a href="">活动</a></li>
+				<li><a href="">服务支持</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">了解更多<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">123</a></li>
+						<li><a href="#">456</a></li>
+						<li><a href="#">789</a></li>
+					</ul>
+				</li>
+				<li><a href="#" data-toggle="modal" data-target="#about">关于荣耀</a></li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<input type="text" class="form-control" placeholder="用户名...">
+				<input type="password" class="form-control" placeholder="密码...">
+				<button type="submit" class="btn btn-primary">登陆</button>
+				<button type="button" class="btn btn-default">注册</button>
+			</form>		
+		</div>
+	</nav>
+	<!-- 轮播图 -->
+	<article>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-side-to="1" class="active"></li>
+				<li data-target="#carousel-example-generic" data-side-to="2">
+				</li>
+				<li data-target="#carousel-example-generic" data-side-to="3">
+				</li>
+				<li data-target="#carousel-example-generic" data-side-to="4">
+				</li>
+				<li data-target="#carousel-example-generic" data-side-to="5">
+				</li>
+				<li data-target="#carousel-example-generic" data-side-to="6">
+				</li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="images/1.jpg">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="images/2.jpg">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="images/3.jpg">
+					<div class="carousel-caption"></div>	
+				</div>
+				<div class="item">
+					<img src="images/4.jpg">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="images/5.jpg">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="images/6.jpg">
+					<div class="carousel-caption"></div>
+				</div>
+			</div>
+			
+				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<!-- <span class="sr-only">上一页</span> -->
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic"data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<!-- <span class="sr-only">下一页</span> -->
+				</a>
+			
+		</div>
+	</article>
+	<!-- 四列相关推荐 -->
+	<hr>
+	<session id="session-nav">
+			<div class="container">
+				<div class="nav-title">
+					<button class="btn btn-info">相关推荐</button>
+					<button class="btn btn-link">更多</button>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<h3>荣耀Play</h3>
+						<p>突破 让快更快</p>
+						<a href="#">
+							<img src="images/honor-play.jpg">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<h3>荣耀 Note10</h3>
+						<p>更大 更快 更COOL</p>
+						<a href="#">	
+							<img src="images/honor-note10.gif">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<h3>荣耀10</h3>
+						<p>会变色更潮美</p>
+						<a href="#">
+							<img src="images/honor-10.jpg">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<h3>荣耀MagicBook</h3>
+						<p>独显轻薄</p>
+						<a href="#">
+							<img src="images/honor-MagicBook.jpg">
+						</a>
+					</div>
+				</div>
+			<hr>
+			</div>
+	</session>
+	<hr>
+	<!-- 可切换选项栏 -->
+	<section class="tabs">
+		<div class="tab-more">
+			<button class="btn btn-info">最新消息</button>
+			<button class="btn btn-link">更多</button>
+		</div>
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a href="#tab-1" data-toggle="tab">荣耀Magic2 搭载麒麟980</a>
+			</li>
+			<li>
+				<a href="#tab-2" data-toggle="tab">荣耀Note10 液冷散热技术</a>
+			</li>
+			<li>
+				<a href="#tab-3" data-toggle="tab">华为P20 新款配色</a>
+			</li>
+			<li>
+				<a href="#tab-4" data-toggle="tab">全联接大会 智能时代</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="tab-1">
+				<div class="tab-img">
+					<img src="images/tab-honor-magic2.jpg">
+				</div>
+				<div class="tab-text">
+					<h3>荣耀Magic2首次曝光！搭载真正全面屏、麒麟980芯片成未来超级旗舰</h3>
+					<p>2018年8月30,在备受瞩目的科技盛会德国柏林IFA展上，荣耀手机为全球消费者带来荣耀致未来的超级旗舰——荣耀Magic2的重磅消息：荣耀Magic2将创新推出Magic Slide魔法全面屏，搭载麒麟980芯片，以及支持更安全的40W超级快充。据悉，Magic Slide 魔法全面屏不仅带来近100%全面屏视野，还开启一个未来世界。</p>
+				</div>
+			</div>
+			<div class="tab-pane" id="tab-2">
+				<div class="tab-text">
+					<h3>致敬大亚湾,荣耀总裁赵明携THE NINE液冷散热现身技术交流</h3>
+					<p>
+						荣耀Note 10搭载了荣耀首次推出的THE NINE液冷散热技术，113mm的液冷贯穿手机热区和冷区再配合创新性打造9层立体散热，能把手机芯片的热量快速均匀分布到机身其他位置，把点扩散到面，并通过铝合金均温板和大面积石墨片把传送到冷区的热量快速散开。配合双Turbo技术，使一直处于高性能、不降频状态。
+					</p>
+				</div>
+				<div class="tab-img">
+					<img src="images/tab-honor-note10.jpg">
+				</div>
+			</div>
+			<div class="tab-pane" id="tab-3">
+				<div class="tab-img">
+					<img src="images/tab-huawei-p20.png">
+				</div>
+				<div class="tab-text">
+					<h3>融入自然韵律之美 华为p20系列</h3>
+					<p>
+						p20系列迎来了四种全新配色，极光闪蝶(Morpho Aurora)、珠光贝母(Pearl White)属于全新的渐变配色，金棕色、雅黑色则是华为首次推出真皮限量版设计。
+					</p>
+				</div>				
+			</div>
+			<div class="tab-pane" id="tab-4">
+				<div class="tab-text">
+					<h3>华为全联接大会2018</h3>
+					<p>
+						数字化升维，智能纪降临。华为预测，到2025年全球个人智能终端将达到4000亿，企业和机构的人工智能利用率将达到86%，数据利用率将达到80%，智能将像空气一样泛在。
+					</p>
+				</div>
+				<div class="tab-img">
+					<img src="images/tab-huawei-activate.png">
+				</div>
+			</div>
+		</div>
+		<hr>
+	</section>
+	<section class="bottom-nav">
+		<div class="foot-left">
+			<div class="foot-links-one foot-links">
+				<dl>
+					<dt><a href="#">关于荣耀</a></dt>
+					<dd><a href="#">荣耀大事记</a></dd>
+					<dd><a href="#">荣耀人物</a></dd>
+					<dd><a href="#">品牌事件</a></dd>
+					<dd><a href="#">新闻中心</a></dd>
+				</dl>
+			</div>
+			<div class="foot-links-two foot-links">
+				<dl>
+					<dt><a href="#">产品</a></dt>
+					<dd><a href="#">手机</a></dd>
+					<dd><a href="#">平板</a></dd>
+					<dd><a href="#">穿戴设备</a></dd>
+					<dd><a href="#">智能家庭</a></dd>
+					<dd><a href="#">配件</a></dd>
+				</dl>
+			</div>
+			<div class="foot-links-three foot-links">
+				<dl>
+					<dt><a href="#">活动</a></dt>
+					<dd><a href="#">近期活动</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">服务支持</a></dt>
+					<dd><a href="#">在线客服</a></dd>
+					<dd><a href="#">服务中心</a></dd>
+				</dl>
+			</div>
+			<div class="foot-links-four foot-links">
+				<dl>
+					<dt><a href="#">快速链接</a></dt>
+					<dd><a href="#">物料下载</a></dd>
+					<dd><a href="#">Vmall购机秘籍</a></dd>
+					<dd><a href="#">移动端官网</a></dd>
+					<dd><a href="#">伙伴通</a></dd>
+					<dd><a href="#">华为商城</a></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="foot-right">
+			<div class="foot-links-five foot-links-other">
+				<dl>
+					<dt><span>联系我们</span></dt>
+					<dd><span>热线电话:(24小时服务热线)</span></dd>
+					<dd><span>400-830-8300</span></dd>
+					<dd><span>800-830-8300(座机)</span></dd>
+					<dd><button class="btn btn-info">在线客服</button></dd>
+				</dl>
+			</div>
+			<div class="foot-links-six foot-links-other">
+				<dl>
+					<dd><span>客服邮箱</span></dd>
+					<dd><span>任何建议和意见都欢迎向我们反馈</span></dd>
+					<dd><button class="btn btn-info">邮件我们</button></dd>
+				</dl>
+			</div>
+			<div class="foot-links-seven foot-links-other">
+				<dt>
+					<dd><span>关注我们:</span></dd>
+					<dd>
+						<a href="#"><img src="images/ico-sina.png"></a>
+						<a href="#"><img src="images/ico-wechat.png"></a>
+						<a href="#"><img src="images/ico-qq.png"></a>
+						<a href="#"><img src="images/ico-xinsheng.png"></a>
+					</dd>
+					<dd>
+						<a href="#"><img src="images/ico-dou.png"></a>
+						<a href="#"><img src="images/ico-tribal.png"></a>
+						<a href="#"><img src="images/ico-youku.png"></a>
+					</dd>
+				</dt>
+			</div>
+		</div>
+	</section>
+	
+	<!-- 弹出框 -->
+	<div class="modal fade" id="about">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title">关于荣耀</h4>
+				</div>
+				<div class="modal-body">
+					<p>荣耀出品，感谢您的支持！</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 页脚 -->
+	<footer>
+		<div class="footer-text">
+			<p>Copyright © 2011-2017华为软件技术有限公司 版权所有 保留一切权利。
+				苏安网安备 32011402010006号 苏ICP备17040376号
+			</p>
+		</div>
+	</footer>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
